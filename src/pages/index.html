@@ -6,9 +6,17 @@
     <title>Document</title>
     <link rel="stylesheet" href="styles/index.css" />
     <link rel="stylesheet" href="styles/navbar.css" />
+    <link rel="stylesheet" href="styles/banner.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
     <header>
+      <!-- Navbar -->
       <nav class="nav">
         <img src="/public/assets/logo.png" alt="" />
         <ul class="nav-list">
@@ -37,7 +45,52 @@
       </nav>
     </header>
 
-    <main></main>
+    <main>
+      <!-- Banner-->
+      <section>
+        <div class="banner">
+          <div class="blue-rectangle"></div>
+          <div class="content">
+            <div class="slogan">LLEVA MASS POR MENOSS</div>
+            <div class="title">TIENDA<br />MENOSS</div>
+          </div>
+
+          <svg
+            class="wave-svg"
+            viewBox="0 0 200 50"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M0 25 Q 25 0, 50 25 T 100 25 T 150 25 T 200 25 T 250 25 T 300 25"
+              fill="transparent"
+              stroke="white"
+              stroke-width="18"
+              stroke-linecap="round"
+            />
+          </svg>
+
+          <svg
+            class="bottom-wave-svg"
+            viewBox="0 0 300 50"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M0 25 Q 25 0, 50 25 T 100 25 T 150 25 T 200 25 T 250 25 T 300 25"
+              fill="transparent"
+              stroke="white"
+              stroke-width="18"
+              stroke-linecap="round"
+            />
+          </svg>
+
+          <div class="x">x</div>
+          <div class="x x2">x</div>
+          <div class="x x3">x</div>
+          <div class="line"></div>
+          <div class="line bottom-line"></div>
+        </div>
+      </section>
+    </main>
 
     <footer></footer>
   </body>

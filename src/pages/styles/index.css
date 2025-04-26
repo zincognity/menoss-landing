@@ -1,13 +1,18 @@
 * {
   margin: 0;
   padding: 0;
+  font-weight: 600;
+  font-style: normal;
   box-sizing: border-box;
+  font-optical-sizing: auto;
+  font-family: "Nunito", sans-serif;
 }
 
 :root {
   --max-width: 1320px;
   --primary-color: #ffffff;
   --secondary-color: #232323;
+  --tertiary-color: #e20b21;
   --background-color: #01004c;
 }
 
