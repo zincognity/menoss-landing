@@ -13,6 +13,7 @@
   --primary-color: #ffffff;
   --secondary-color: #232323;
   --tertiary-color: #e20b21;
+  --quaternary-color: #d9d9d9;
   --background-color: #01004c;
 }
 
@@ -20,4 +21,20 @@ body {
   font-family: Arial, sans-serif;
   background-color: var(--background-color);
   color: var(--primary-color);
+}
+
+.button-primary {
+  background-color: var(--tertiary-color);
+  color: var(--primary-color);
+  padding: 10px 20px;
+  height: fit-content;
+  border-radius: 30px;
+  border: none;
+  cursor: pointer;
+}
+
+.button-primary a {
+  font-size: 1.4rem;
+  color: var(--primary-color);
+  text-decoration: none;
 }

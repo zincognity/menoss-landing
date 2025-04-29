@@ -1,0 +1,32 @@
+.sections {
+  display: flex;
+  flex-direction: row;
+  height: 340px;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.section-card {
+  background: var(--quaternary-color);
+  padding: 35px;
+  width: 40%;
+  border-radius: 15px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 20px;
+}
+
+.section-card-content h2 {
+  font-size: 2rem;
+  color: var(--secondary-color);
+  font-weight: 800;
+  margin-bottom: 20px;
+}
+
+.section-card-content p {
+  font-size: 1.2rem;
+  color: var(--secondary-color);
+  line-height: 1.5;
+}
