@@ -1,5 +1,5 @@
 .footer {
-    background-color: #e3e3e3;
+    background-color: #D9D9D9;
     padding: 40px;
     font-size: 16px;
     color: #000;
@@ -9,15 +9,20 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    gap: 30px;
+    gap: 15px; /* Antes 30px */
   }
 
   .footer-column {
-    flex: 1 1 220px;
-    min-width: 200px;
+    flex: 1 1 180px; /* Antes 220px */
+    min-width: 160px; /* Antes 200px */
   }
-
-  .footer-column h3,
+  .footer-column h3 {
+    font-size: 20px;
+    margin-bottom: 20px;
+    font-weight: bold;
+    white-space: nowrap;
+  }
+  
   .footer-column h4 {
     font-size: 18px;
     margin-bottom: 20px;
@@ -27,11 +32,12 @@
   .contact-item {
     display: flex;
     align-items: flex-start;
-    margin-bottom: 20px;
+    margin-bottom: 15px;
   }
 
   .icon {
-    font-size: 22px;
+    font-size: 40px;
+    margin-top: 15px;
     margin-right: 10px;
     line-height: 1.4;
   }
@@ -45,6 +51,7 @@
     display: block;
     font-weight: bold;
     margin-bottom: 4px;
+    font-size: 17px;
   }
 
   .footer-column ul {
@@ -67,9 +74,10 @@
   }
 
   .red-link {
-    color: rgba(196,51,74,255) !important;
+    color: #E20B21 !important;
     font-weight: bold !important;
-    text-decoration: none !important;
+    text-decoration: underline !important;
+    font-size: 15px;
   }
   
   @media (max-width: 768px) {
