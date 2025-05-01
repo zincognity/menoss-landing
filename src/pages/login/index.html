@@ -6,7 +6,8 @@
     <title>Menoss - Login</title>
     <link rel="stylesheet" href="../../styles/index.css" />
     <link rel="stylesheet" href="../../styles/navbar.module.css" />
-    <link rel="stylesheet" href="../../styles/footer.modele.css" />
+    <link rel="stylesheet" href="../../styles/footer.module.css" />
+    <link rel="stylesheet" href="../../styles/login.module.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -40,7 +41,26 @@
     </header>
 
     <!-- Login -->
-    <main></main>
+    <main>
+      <section class="login-container">
+        <h2>Iniciar sesión</h2>
+        <form action="/login" method="POST">
+          <div class="form-group">
+            <label for="username">Usuario</label>
+            <input type="text" id="username" name="username" required />
+          </div>
+
+          <div class="form-group">
+            <label for="password">Contraseña</label>
+            <input type="password" id="password" name="password" required />
+          </div>
+
+          <button type="submit" class="button-primary">
+            <a href="">Entrar</a>
+          </button>
+        </form>
+      </section>
+    </main>
 
     <!-- Footer -->
     <footer class="footer">
