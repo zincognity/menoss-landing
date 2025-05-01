@@ -1,7 +1,6 @@
 .sections {
   display: flex;
   flex-direction: row;
-  height: 340px;
   justify-content: center;
   align-items: center;
   gap: 20px;
@@ -10,7 +9,6 @@
 .section-card {
   background: var(--quaternary-color);
   padding: 35px;
-  width: 40%;
   border-radius: 15px;
   display: flex;
   flex-direction: row;

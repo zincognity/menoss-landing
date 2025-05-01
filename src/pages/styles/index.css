@@ -10,6 +10,7 @@
 
 :root {
   --max-width: 1320px;
+  --title-size: 50px;
   --primary-color: #ffffff;
   --secondary-color: #232323;
   --tertiary-color: #e20b21;
@@ -28,7 +29,7 @@ body {
   color: var(--primary-color);
   padding: 10px 20px;
   height: fit-content;
-  border-radius: 30px;
+  border-radius: 10px;
   border: none;
   cursor: pointer;
 }
@@ -36,5 +37,18 @@ body {
 .button-primary a {
   font-size: 1.4rem;
   color: var(--primary-color);
+  font-weight: 800;
   text-decoration: none;
+}
+
+main {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 100px;
+}
+
+.section {
+  width: var(--max-width);
 }
