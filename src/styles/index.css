@@ -42,6 +42,13 @@ body {
   cursor: pointer;
 }
 
+@media (max-width: 1024px) {
+  .button-primary {
+    width: 100%;
+    text-align: center;
+  }
+}
+
 .button-primary a {
   font-size: 1.4rem;
   color: var(--primary-color);
@@ -59,5 +66,5 @@ main {
 }
 
 .section {
-  width: var(--max-width);
+  max-width: var(--max-width);
 }

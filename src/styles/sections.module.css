@@ -1,8 +1,9 @@
 .sections {
+  width: 100%;
+  padding: 0 20px;
   display: flex;
-  flex-direction: row;
+  flex-wrap: wrap;
   justify-content: center;
-  align-items: center;
   gap: 20px;
 }
 
@@ -14,6 +15,13 @@
   flex-direction: row;
   align-items: center;
   gap: 20px;
+  flex: 1 1 calc(50% - 20px);
+  box-sizing: border-box;
+  max-width: 100%;
+}
+
+.section-card-content {
+  width: 100%;
 }
 
 .section-card-content h2 {
@@ -27,4 +35,14 @@
   font-size: 1.2rem;
   color: var(--secondary-color);
   line-height: 1.5;
+}
+
+@media (max-width: 1024px) {
+  .sections {
+    gap: 50px;
+  }
+  .section-card {
+    flex: 1 1 100%;
+    flex-direction: column;
+  }
 }
