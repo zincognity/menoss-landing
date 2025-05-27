@@ -9,33 +9,41 @@ header {
 
 .nav {
   display: flex;
-  justify-content: space-between;
   align-items: center;
-  transition: background-color 0.3s ease;
+  justify-content: space-between;
   max-width: var(--max-width);
   margin: auto;
+  padding: 0 1rem;
   height: 80px;
   width: 100%;
+  transition: height 0.3s ease, padding 0.3s ease;
 }
 
 .nav img {
   width: 140px;
   height: 70px;
   object-fit: cover;
+  transition: width 0.3s ease, height 0.3s ease;
 }
 
 .nav-list {
   display: flex;
   list-style: none;
-  text-decoration: none;
   font-weight: 500;
   gap: 10px;
-  transition: background-color 0.3s ease;
+  transition: opacity 0.3s ease;
 }
 
 .nav-list li {
   font-size: 1.1rem;
   padding: 5px 10px;
+  transition: color 0.3s ease;
+}
+
+.nav-list li a {
+  text-decoration: none;
+  color: var(--secondary-color);
+  transition: color 0.3s ease, text-decoration 0.3s ease;
 }
 
 .nav-list li a:hover {
@@ -43,14 +51,10 @@ header {
   text-decoration: underline;
 }
 
-.nav-list li a {
-  text-decoration: none;
-  color: var(--secondary-color);
-}
-
-.nav > div {
+.nav-icons {
   display: flex;
   gap: 20px;
+  transition: opacity 0.3s ease;
 }
 
 #user > img {
@@ -58,6 +62,7 @@ header {
   height: 45px;
   border-radius: 100%;
   object-fit: cover;
+  transition: width 0.3s ease, height 0.3s ease;
 }
 
 #cart {
@@ -68,12 +73,14 @@ header {
   display: flex;
   align-items: center;
   justify-content: center;
+  transition: width 0.3s ease, height 0.3s ease;
 }
 
 #cart img {
   width: 100%;
   height: 100%;
   padding: 5px;
+  transition: padding 0.3s ease;
 }
 
 #cart-count {
@@ -95,4 +102,81 @@ header {
   box-shadow: 0 0 0 2px white;
   line-height: 1;
   white-space: nowrap;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.nav-toggle {
+  display: none;
+}
+
+.nav-toggle-label {
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  gap: 5px;
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+}
+
+.nav-toggle-label span,
+.nav-toggle-label span::before,
+.nav-toggle-label span::after {
+  content: "";
+  display: block;
+  background: var(--secondary-color);
+  height: 3px;
+  border-radius: 3px;
+  transition: all 0.3s ease;
+  position: relative;
+}
+
+.nav-toggle-label span::before {
+  top: -8px;
+}
+
+.nav-toggle-label span::after {
+  top: 5px;
+}
+
+@media (max-width: 768px) {
+  .nav {
+    flex-wrap: wrap;
+    height: auto;
+  }
+
+  .nav-list {
+    flex-direction: column;
+    width: 100%;
+    max-height: 0px;
+    overflow: hidden;
+    text-align: center;
+    transition: max-height 0.3s ease;
+  }
+
+  .nav-list li {
+    padding: 10px 0;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  }
+
+  .nav-icons {
+    width: 100%;
+    justify-content: center;
+    max-height: 0px;
+    overflow: hidden;
+    transition: max-height 0.3s ease;
+  }
+
+  .nav-toggle:checked ~ .nav-list {
+    max-height: 400px;
+  }
+
+  .nav-toggle:checked ~ .nav-icons {
+    max-height: 120px;
+    padding-top: 10px;
+  }
+
+  .nav-toggle-label {
+    display: flex;
+  }
 }
