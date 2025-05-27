@@ -1,16 +1,44 @@
 main {
-  min-height: calc(100vh - 80px);
+  padding-bottom: 0px;
+}
+
+.banner-container {
+  width: 100%;
   display: flex;
-  justify-content: center;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.banner {
+  background-color: white;
+  color: var(--background-color);
+}
+
+.content {
+  display: flex;
   align-items: center;
 }
 
+.title {
+  font-size: 100px;
+  line-height: 1;
+}
+
+.line {
+  background-color: var(--background-color);
+}
+
+.line::after {
+  background-color: var(--background-color);
+}
+
 .login-container {
-  color: var(--secondary-color);
-  width: 50%;
+  z-index: 1;
+  color: var(--primary-color);
+  width: 600px;
   min-height: 50%;
   padding: 2rem;
-  background-color: var(--quaternary-color);
+  background-color: var(--background-color);
   border-radius: 10px;
   display: flex;
   flex-direction: column;
@@ -24,6 +52,7 @@ main {
 }
 
 form {
+  padding: 1.25rem;
   display: flex;
   flex-direction: column;
   gap: 20px;
@@ -52,4 +81,17 @@ input[type="password"] {
 
 button[type="submit"] {
   width: 100%;
+}
+
+.links {
+  padding: 1.25rem;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 1rem;
+}
+
+.links a {
+  color: var(--primary-color);
+  text-decoration: none;
+  font-size: 1rem;
 }

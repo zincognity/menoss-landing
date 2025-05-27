@@ -9,11 +9,10 @@
   justify-content: center;
 }
 
-.blue-rectangle {
+.rectangle {
   position: absolute;
   width: 450px;
   height: 520px;
-  background-color: var(--background-color);
   right: 25%;
   border-radius: 0 0 10px 10px;
   top: 0;

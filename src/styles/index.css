@@ -76,8 +76,17 @@ main {
   align-items: center;
   gap: 100px;
   flex: 1;
+  padding-bottom: 50px;
 }
 
 .section {
   max-width: var(--max-width);
+}
+
+.blue {
+  background-color: var(--background-color);
+}
+
+.orange {
+  background-color: var(--tertiary-color);
 }
