@@ -1,0 +1,36 @@
+.not-found {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+
+.not-found h1 {
+  font-size: 160px;
+  font-weight: 900;
+  color: var(--tertiary-color);
+}
+
+.not-found h2 {
+  font-size: 42px;
+  font-weight: 800;
+}
+
+.button.button-primary {
+  background-color: var(--tertiary-color);
+  border: none;
+  padding: 14px 32px;
+  font-size: 18px;
+  font-weight: bold;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.button.button-primary a {
+  text-decoration: none;
+  color: white;
+}
+
+.button.button-primary:hover {
+  opacity: 0.9;
+}
