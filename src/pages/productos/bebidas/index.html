@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Menoss - Bebidas</title>
+
+    <!-- Estilos -->
+    <link rel="stylesheet" href="../../../styles/index.css" />
+    <link rel="stylesheet" href="../../../styles/navbar.module.css" />
+    <link rel="stylesheet" href="../../../styles/footer.module.css" />
+    <link rel="stylesheet" href="../../../styles/product.module.css" />
+    <link rel="stylesheet" href="../../../styles/sections.module.css" />
+
+    <!-- Fuente -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;800&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- Navbar -->
+    <header>
+      <nav class="nav">
+        <a href="../../index.html">
+          <img src="../../../public/assets/logo.png" alt="logo menoss" />
+        </a>
+
+        <input type="checkbox" id="nav-toggle" class="nav-toggle" />
+        <label for="nav-toggle" class="nav-toggle-label"><span></span></label>
+
+        <ul class="nav-list">
+          <li><a href="/src/pages/index.html">Precios Menoss</a></li>
+          <li><a href="#">Productos</a></li>
+          <li><a href="#">Trabaja Conmigo</a></li>
+          <li><a href="#">Sobre Nosotros</a></li>
+        </ul>
+
+        <div class="nav-icons">
+          <a id="cart" href="#">
+            <img src="../../../public/assets/cart.svg" alt="Carrito" />
+            <span id="cart-count">1</span>
+          </a>
+          <a id="user" href="#">
+            <img src="../../../public/assets/user.svg" alt="Usuario" />
+          </a>
+        </div>
+      </nav>
+    </header>
+
+    <!-- Productos: Bebidas -->
+    <main>
+      <section
+        class="product-section section"
+        style="background-color: #01004c; padding: 50px 0"
+      >
+        <h2 style="color: white">Bebidas</h2>
+        <div class="product-content-section">
+          <!-- Producto 1 -->
+          <article class="product-card">
+            <div class="product-img">
+              <img
+                src="../../../public/assets/coca.png"
+                alt="Coca Cola 2.25L"
+              />
+            </div>
+            <div class="product-details">
+              <h4>COCA COLA</h4>
+              <span>Botella 2.25L</span>
+              <span>Marca: Coca Cola</span>
+            </div>
+            <button class="button button-primary">S/. 7.50</button>
+          </article>
+
+          <!-- Producto 2 -->
+          <article class="product-card">
+            <div class="product-img">
+              <img
+                src="../../../public/assets/frugos.png"
+                alt="Frugos Mango 1L"
+              />
+            </div>
+            <div class="product-details">
+              <h4>FRUGOS MANGO</h4>
+              <span>Caja 1L</span>
+              <span>Marca: Del Valle</span>
+            </div>
+            <button class="button button-primary">S/. 5.20</button>
+          </article>
+
+          <!-- Producto 3 -->
+          <article class="product-card">
+            <div class="product-img">
+              <img
+                src="../../../public/assets/agua.png"
+                alt="Agua San Luis 600ml"
+              />
+            </div>
+            <div class="product-details">
+              <h4>AGUA SAN LUIS</h4>
+              <span>600ml sin gas</span>
+              <span>Marca: San Luis</span>
+            </div>
+            <button class="button button-primary">S/. 1.20</button>
+          </article>
+
+          <!-- Producto 4 -->
+          <article class="product-card">
+            <div class="product-img">
+              <img src="../../../public/assets/sprite.png" alt="Sprite 1.5L" />
+            </div>
+            <div class="product-details">
+              <h4>SPRITE</h4>
+              <span>Botella 1.5L</span>
+              <span>Marca: Sprite</span>
+            </div>
+            <button class="button button-primary">S/. 6.00</button>
+          </article>
+
+          <!-- Producto 5 -->
+          <article class="product-card">
+            <div class="product-img">
+              <img
+                src="../../../public/assets/inkacola.png"
+                alt="Inca Kola 1L"
+              />
+            </div>
+            <div class="product-details">
+              <h4>INCA KOLA</h4>
+              <span>Botella 1L</span>
+              <span>Marca: Inca Kola</span>
+            </div>
+            <button class="button button-primary">S/. 4.90</button>
+          </article>
+
+          <!-- Producto 6 (Leche Gloria) -->
+          <article class="product-card">
+            <div class="product-img">
+              <img
+                src="../../../public/assets/gloria-lata.png"
+                alt="Leche Gloria Lata"
+              />
+            </div>
+            <div class="product-details">
+              <h4>LECHE GLORIA</h4>
+              <span>Lata 400g</span>
+              <span>Marca: Gloria</span>
+            </div>
+            <button class="button button-primary">S/. 4.80</button>
+          </article>
+
+          <!-- Producto 7 -->
+          <article class="product-card">
+            <div class="product-img">
+              <img src="../../../public/assets/pepsi.png" alt="Pepsi 2.25L" />
+            </div>
+            <div class="product-details">
+              <h4>PEPSI</h4>
+              <span>Botella 2.25L</span>
+              <span>Marca: Pepsi</span>
+            </div>
+            <button class="button button-primary">S/. 6.90</button>
+          </article>
+
+          <!-- Producto 8 -->
+          <article class="product-card">
+            <div class="product-img">
+              <img
+                src="../../../public/assets/guarana.png"
+                alt="Guaraná 1.5L"
+              />
+            </div>
+            <div class="product-details">
+              <h4>GUARANÁ</h4>
+              <span>Botella 1.5L</span>
+              <span>Marca: Backus</span>
+            </div>
+            <button class="button button-primary">S/. 5.80</button>
+          </article>
+        </div>
+      </section>
+
+      <!-- options -->
+      <section
+        class="sections section"
+        style="background-color: #01004c; padding-bottom: 50px"
+      >
+        <div class="section-card">
+          <div class="section-card-content">
+            <h2>Supermercado</h2>
+            <p>
+              Descubre nuestra gran variedad de productos en alimentos y recibe
+              menoss costos
+            </p>
+          </div>
+          <div class="button button-primary">
+            <a href="#">Ingresar</a>
+          </div>
+        </div>
+
+        <div class="section-card">
+          <div class="section-card-content">
+            <h2>Hogar</h2>
+            <p>
+              Descubre nuestra gran variedad de productos para el hogar y recibe
+              menoss costos
+            </p>
+          </div>
+          <div class="button button-primary">
+            <a href="#">Ingresar</a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="footer-container">
+        <!-- Contacto -->
+        <div class="footer-column">
+          <h3>Comunícate con nosotros</h3>
+          <div class="contact-item">
+            <div class="icon">✉️</div>
+            <div class="contact-text">
+              <strong>Escríbenos</strong>
+              servicioalcliente@menos.pe
+            </div>
+          </div>
+          <div class="contact-item">
+            <div class="icon">📞</div>
+            <div class="contact-text">
+              <strong>Llámanos</strong>
+              (01) 999 9999
+            </div>
+          </div>
+          <div class="contact-item">
+            <div class="icon">📅</div>
+            <div class="contact-text">
+              <strong>Visítanos</strong>
+              <a href="#" class="red-link">Ver tiendas</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Nosotros -->
+        <div class="footer-column">
+          <h4>Nosotros</h4>
+          <ul>
+            <li><a href="#">Conócenos</a></li>
+            <li><a href="#">Responsabilidad social</a></li>
+            <li><a href="#">Nuestras tiendas</a></li>
+            <li><a href="#">Ventas corporativas</a></li>
+          </ul>
+        </div>
+
+        <!-- Cliente -->
+        <div class="footer-column">
+          <h4>Atención al cliente</h4>
+          <ul>
+            <li><a href="#">Tutorial de compra</a></li>
+            <li><a href="#">Horarios de atención telefónica</a></li>
+            <li><a href="#">Preguntas frecuentes</a></li>
+            <li><a href="#">Cambios y devoluciones</a></li>
+          </ul>
+        </div>
+
+        <!-- Políticas -->
+        <div class="footer-column">
+          <h4>Políticas y condiciones</h4>
+          <ul>
+            <li><a href="#">Política de datos personales</a></li>
+            <li><a href="#">Derecho ARCO y privacidad</a></li>
+            <li><a href="#">Condiciones de promociones</a></li>
+            <li><a href="#">Términos y condiciones</a></li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
