@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
+
+:root {
+  --fondo-crema: #FFF9F3;
+  --azul-petroleo: #0C1849;
+  --azul-marino: #011140;
+  --blanco: #ffffff;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: var(--fondo-crema);
+  margin: 0;
+  padding: 40px 20px;
+}
+
+/* Sección */
+.categorias-section {
+  text-align: center;
+}
+
+.categorias-section h2 {
+  color: var(--azul-petroleo);
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 40px;
+}
+
+/* Grid */
+.categorias-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+  gap: 40px;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+/* Tarjeta */
+.categoria {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: var(--azul-petroleo);
+}
+
+.categoria-icono {
+  background-color: var(--azul-marino);
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 10px;
+}
+
+.categoria-icono img {
+  width: 50%;
+  height: 50%;
+  object-fit: contain;
+  filter: brightness(0) invert(1); /* Blanco */
+}
+
+.categoria-nombre {
+  font-size: 1rem;
+  font-weight: 500;
+  text-align: center;
+}
+
+/* Responsive */
+@media (max-width: 576px) {
+  .categoria-icono {
+    width: 80px;
+    height: 80px;
+  }
+
+  .categoria-nombre {
+    font-size: 0.9rem;
+  }
+
+  .categorias-section h2 {
+    font-size: 2rem;
+  }
+}

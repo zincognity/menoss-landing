@@ -1,0 +1,53 @@
+<main>
+  <section class="login-banner">
+    <div class="banner-container">
+      
+      <!-- IZQUIERDA: Texto -->
+      <article class="content">
+        <h1 class="title">INICIÁ<br />SESIÓN</h1>
+      </article>
+
+      <!-- DERECHA: Login box -->
+      <div class="login-container">
+        
+        <!-- Logo Menoss -->
+        <div class="login-logo">
+          <img src="/public/assets/logo.png" alt="Logo Menoss" class="logo-img" />
+        </div>
+
+        <!-- Formulario -->
+        <form action="/login" method="POST">
+          <div class="form-group">
+            <label for="username">Usuario</label>
+            <input
+              type="text"
+              id="username"
+              name="username"
+              placeholder="user@gmail.com"
+              required
+            />
+          </div>
+
+          <div class="form-group">
+            <label for="password">Contraseña</label>
+            <input
+              type="password"
+              id="password"
+              name="password"
+              placeholder="*******"
+              required
+            />
+          </div>
+
+          <button type="submit" class="button button-primary">Ingresar</button>
+        </form>
+
+        <!-- Enlaces inferiores -->
+        <div class="links">
+          <a href="#">¿Olvidaste tu contraseña?</a>
+          <a href="../register/index.html">¿No tienes cuenta? Regístrate</a>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>

@@ -1,0 +1,172 @@
+:root {
+  --primary-color: #fff9f3;
+  --secondary-color: #0c1849;
+  --tertiary-color: #e54225;
+  --light-text: #f5f5f5;
+  --font-main: "Poppins", "Montserrat", sans-serif;
+  --max-width: 1200px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--primary-color);
+  font-family: var(--font-main);
+}
+
+main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+.login-banner {
+  width: 100%;
+  padding: 60px 20px;
+  background-color: var(--primary-color);
+}
+
+.banner-container {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 60px;
+  flex-wrap: wrap;
+}
+
+.content {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.title {
+  font-size: 90px;
+  font-weight: 800;
+  color: var(--secondary-color);
+  line-height: 1.1;
+  text-align: left;
+}
+
+.login-container {
+  background-color: var(--secondary-color);
+  color: white;
+  padding: 2.5rem;
+  border-radius: 12px;
+  width: 480px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.login-logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 2rem;
+  height: auto;
+}
+
+.logo-img {
+  max-height: 60px;
+  width: auto;
+  object-fit: contain;
+  display: block;
+}
+
+form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.form-group label {
+  font-size: 15px;
+  font-weight: 600;
+  margin-bottom: 6px;
+  display: block;
+  color: white;
+}
+
+input[type="text"],
+input[type="password"] {
+  width: 100%;
+  padding: 12px 14px;
+  font-size: 15px;
+  border-radius: 8px;
+  border: none;
+  outline: none;
+  font-family: "Roboto", sans-serif;
+}
+
+.button {
+  width: 100%;
+  border-radius: 8px;
+  font-size: 1.1rem;
+  font-weight: bold;
+  padding: 12px;
+  cursor: pointer;
+  border: none;
+  margin-top: 10px;
+}
+
+.button-primary {
+  background-color: var(--tertiary-color);
+  color: white;
+  transition: background-color 0.3s ease;
+}
+
+.button-primary:hover {
+  background-color: #c7371b;
+}
+
+.links {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  font-size: 13px;
+  margin-top: 1.5rem;
+  color: var(--light-text);
+}
+
+.links a {
+  color: var(--light-text);
+  text-decoration: none;
+}
+
+.links a:hover {
+  color: #cccccc;
+  text-decoration: underline;
+}
+
+@media (max-width: 1024px) {
+  .banner-container {
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+  }
+
+  .title {
+    font-size: 60px;
+    text-align: center;
+  }
+
+  .login-container {
+    width: 90%;
+  }
+
+  .links {
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+    text-align: center;
+  }
+}

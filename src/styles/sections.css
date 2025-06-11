@@ -1,0 +1,73 @@
+.sections {
+  width: 100%;
+  padding: 60px 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.section-card {
+  background: #e3e3e3; /* Fondo gris claro como tu diseño */
+  padding: 25px 30px;
+  border-radius: 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex: 1 1 500px;
+  max-width: 520px;
+  box-sizing: border-box;
+  gap: 20px;
+}
+
+.section-card-content {
+  flex: 1;
+}
+
+.section-card h2 {
+  font-size: 1.4rem;
+  color: #0c1849;
+  font-weight: 800;
+  margin-bottom: 10px;
+}
+
+.section-card p {
+  font-size: 1rem;
+  color: #0c1849;
+  line-height: 1.5;
+}
+
+.button-primary {
+  background-color: #e54225;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 20px;
+  font-weight: bold;
+  font-size: 0.95rem;
+  border: none;
+  text-decoration: none;
+  text-align: center;
+  display: inline-block;
+  transition: background-color 0.3s ease;
+}
+
+.button-primary:hover {
+  background-color: #c7371b;
+}
+
+@media (max-width: 768px) {
+  .sections {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .section-card {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .button-primary {
+    align-self: flex-end;
+    margin-top: 15px;
+  }
+}

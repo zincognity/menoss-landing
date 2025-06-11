@@ -1,0 +1,122 @@
+/* Container principal */
+.product-section {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  max-width: var(--max-width);
+  padding: 40px 20px;
+  background-color: #fff9f3; /* Blanco hueso */
+}
+
+/* Título “Bebidas”, etc. */
+.product-section > h2 {
+  font-family: 'Poppins', sans-serif;
+  font-size: 2.5rem;
+  font-weight: 700;
+  text-align: center;
+  color: #0c1849; /* Azul petróleo oscuro */
+}
+
+/* Grid responsivo de productos */
+.product-content-section {
+  display: grid;
+  width: 100%;
+  gap: 30px;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  justify-items: center;
+}
+
+/* Tarjeta individual */
+.product-card {
+  background: #ffffff; /* Fondo blanco */
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08); /* Sombra suave */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  max-width: 260px;
+  box-sizing: border-box;
+}
+
+/* Imagen redonda */
+.product-img {
+  background-color: #f8f8f8;
+  border-radius: 50%;
+  width: 140px;
+  height: 140px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  margin-bottom: 16px;
+}
+
+.product-img img {
+  max-height: 120px;
+  width: auto;
+  display: block;
+}
+
+/* Detalles del producto */
+.product-details {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  margin-bottom: 16px;
+}
+
+.product-details h4 {
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #0c1849;
+  text-transform: uppercase;
+}
+
+.product-details span {
+  font-family: 'Poppins', sans-serif;
+  font-size: 0.95rem;
+  font-weight: 400;
+  color: #0c1849;
+}
+
+/* Botón de precio */
+.product-card > button {
+  width: 100%;
+  font-family: 'Poppins', sans-serif;
+  font-size: 1rem;
+  font-weight: 600;
+  background-color: #e54225; /* Rojo Menoss */
+  color: #ffffff;
+  padding: 10px 0;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.product-card > button:hover {
+  background-color: #c7371b; /* Rojo más oscuro al hover */
+}
+
+/* Responsive: móviles pequeños */
+@media (max-width: 600px) {
+  .product-content-section {
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  }
+
+  .product-section {
+    padding: 20px 10px;
+  }
+}
+
+/* ✅ Forzar 5 columnas en pantallas grandes */
+@media (min-width: 1200px) {
+  .product-content-section {
+    grid-template-columns: repeat(5, 1fr);
+  }
+}
