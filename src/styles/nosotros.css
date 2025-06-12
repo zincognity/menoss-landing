@@ -1,0 +1,101 @@
+/* =============================
+   ESTILOS PARA SOBRE NOSOTROS
+============================= */
+
+.nosotros {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 60px 20px;
+  background-color: var(--color-fondo);
+  gap: 40px;
+  max-width: var(--max-width);
+  margin: 0 auto;
+}
+
+.nosotros-texto {
+  flex: 1 1 520px;
+}
+
+.nosotros-texto h1 {
+  font-size: 2.8rem;
+  font-weight: 800;
+  margin-bottom: 20px;
+  color: var(--color-texto);
+}
+
+.nosotros-texto p {
+  font-size: 1.05rem;
+  line-height: 1.6;
+  margin-bottom: 30px;
+  color: var(--color-secundario);
+}
+
+.nosotros-texto h2 {
+  font-size: 1.6rem;
+  font-weight: 700;
+  color: var(--color-texto);
+  margin-top: 40px;
+  margin-bottom: 10px;
+}
+
+.nosotros-texto ul {
+  list-style: none;
+  padding-left: 0;
+  margin-top: 20px;
+}
+
+.nosotros-texto ul li {
+  font-size: 1rem;
+  color: var(--color-secundario);
+  margin-bottom: 15px;
+  position: relative;
+  padding-left: 22px;
+}
+
+.nosotros-texto ul li::before {
+  content: "●";
+  color: var(--color-boton);
+  font-size: 1.2rem;
+  position: absolute;
+  left: 0;
+  top: 0;
+  line-height: 1.2;
+}
+
+.nosotros-imagen {
+  flex: 1 1 360px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.nosotros-imagen img {
+  max-width: 100%;
+  border-radius: 12px;
+  object-fit: cover;
+  box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .nosotros {
+    flex-direction: column;
+    align-items: center;
+    padding: 40px 15px;
+  }
+
+  .nosotros-texto h1 {
+    font-size: 2.2rem;
+    text-align: center;
+  }
+
+  .nosotros-texto h2 {
+    font-size: 1.3rem;
+  }
+
+  .nosotros-imagen {
+    margin-top: 30px;
+  }
+}

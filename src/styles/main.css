@@ -4,7 +4,7 @@
 :root {
   --color-principal: #0C1849;     /* Azul oscuro profundo */
   --color-secundario: #2F2F2F;    /* Gris oscuro suave */
-  --color-fondo: #FFF9F3;         /* Fondo crema claro */
+  --color-fondo: #FFFFFF;         /* Fondo crema claro */
   --color-boton: #E54225;         /* Rojo MENOSS */
   --color-texto: #0C1849;         /* Texto principal */
   --color-input-borde: #DDDDDD;
