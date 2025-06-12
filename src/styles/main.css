@@ -1,0 +1,45 @@
+/* ==============================
+   CONFIGURACIÓN GENERAL
+============================== */
+:root {
+  --color-principal: #0C1849;     /* Azul oscuro profundo */
+  --color-secundario: #2F2F2F;    /* Gris oscuro suave */
+  --color-fondo: #FFF9F3;         /* Fondo crema claro */
+  --color-boton: #E54225;         /* Rojo MENOSS */
+  --color-texto: #0C1849;         /* Texto principal */
+  --color-input-borde: #DDDDDD;
+  --color-input-fondo: #FFFFFF;
+  --fuente-base: 'Poppins', 'Nunito Sans', 'Montserrat', sans-serif;
+  --max-width: 1200px;
+}
+
+body {
+  font-family: var(--fuente-base);
+  background-color: var(--color-fondo);
+  color: var(--color-texto);
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+}
+
+main {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 0 20px;
+  box-sizing: border-box;
+}
+
+/* ==============================
+   TEXTOS GENERALES
+============================== */
+h1, h2, h3, h4, h5 {
+  color: var(--color-texto);
+  font-weight: 700;
+  margin-top: 0;
+}
+
+p, li, label, span {
+  color: var(--color-secundario);
+  font-weight: 400;
+  font-size: 16px;
+}

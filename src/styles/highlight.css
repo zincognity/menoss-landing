@@ -1,0 +1,122 @@
+.highlight-section {
+  padding: 80px 20px;
+  background-color: #fff9f3;
+  text-align: center;
+}
+
+.highlight-section h2 {
+  font-size: 2rem;
+  color: #0c1849;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 800;
+  margin-bottom: 40px;
+}
+
+/* Cuadrícula de productos */
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 30px;
+  justify-items: center;
+  max-width: 1200px;
+  margin: 0 auto 40px auto;
+}
+
+/* Tarjeta de producto */
+.product-card {
+  background-color: #ffffff;
+  border-radius: 16px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  padding: 24px 20px;
+  width: 100%;
+  max-width: 260px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: transform 0.2s ease;
+}
+
+.product-card:hover {
+  transform: translateY(-4px);
+}
+
+/* Imagen circular */
+.product-img {
+  background-color: #f2f2f2;
+  border-radius: 50%;
+  width: 120px;
+  height: 120px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 16px;
+  overflow: hidden;
+}
+
+.product-img img {
+  max-height: 100px;
+  width: auto;
+  object-fit: contain;
+}
+
+/* Texto del producto */
+.product-details {
+  text-align: center;
+  margin-bottom: 16px;
+  font-family: 'Poppins', sans-serif;
+}
+
+.product-details h4 {
+  font-size: 1rem;
+  font-weight: 700;
+  color: #0c1849;
+  margin-bottom: 6px;
+  text-transform: uppercase;
+}
+
+.product-details span {
+  display: block;
+  font-size: 0.9rem;
+  color: #2f2f2f;
+}
+
+/* Botón rojo */
+.product-card button {
+  background-color: #e54225;
+  color: #ffffff;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+  font-size: 0.95rem;
+  padding: 10px 0;
+  border: none;
+  border-radius: 8px;
+  width: 100%;
+  transition: background-color 0.3s ease;
+  cursor: pointer;
+}
+
+.product-card button:hover {
+  background-color: #c7371b;
+}
+
+/* CTA amarillo */
+.highlight-cta {
+  margin-top: 10px;
+}
+
+.button-offer {
+  background-color: #f9c243;
+  color: #0c1849;
+  font-weight: 700;
+  font-family: 'Poppins', sans-serif;
+  padding: 12px 26px;
+  font-size: 1rem;
+  border-radius: 12px;
+  text-decoration: none;
+  display: inline-block;
+  transition: background-color 0.3s ease;
+}
+
+.button-offer:hover {
+  background-color: #e0a930;
+}

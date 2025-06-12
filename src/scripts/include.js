@@ -9,6 +9,7 @@ document.addEventListener("DOMContentLoaded", () => {
       el.innerHTML = content;
     } catch (err) {
       el.innerHTML = `<p style="color:red;">${err.message}</p>`;
+      console.error(`${err.message}`);
     }
   });
 });

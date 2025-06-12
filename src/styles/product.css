@@ -1,66 +1,64 @@
-/* Container principal */
+/* CONTENEDOR GENERAL DE PRODUCTOS */
 .product-section {
   width: 100%;
-  display: flex;
-  flex-direction: column;
-  gap: 40px;
-  max-width: var(--max-width);
-  padding: 40px 20px;
-  background-color: #fff9f3; /* Blanco hueso */
+  padding: 60px 40px;
+  background-color: #ffffff; /* fondo blanco puro */
 }
 
-/* Título “Bebidas”, etc. */
 .product-section > h2 {
   font-family: 'Poppins', sans-serif;
   font-size: 2.5rem;
   font-weight: 700;
   text-align: center;
-  color: #0c1849; /* Azul petróleo oscuro */
+  color: #0C1849;
+  margin-bottom: 50px;
 }
 
-/* Grid responsivo de productos */
+/* GRID DE TARJETAS */
 .product-content-section {
-  display: grid;
   width: 100%;
-  gap: 30px;
+  display: grid;
   grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
-  justify-items: center;
+  gap: 30px;
+  justify-content: center;
 }
 
-/* Tarjeta individual */
+/* TARJETA INDIVIDUAL */
 .product-card {
-  background: #ffffff; /* Fondo blanco */
-  border-radius: 12px;
+  background: #ffffff;
+  border-radius: 20px;
   padding: 20px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08); /* Sombra suave */
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 100%;
-  max-width: 260px;
-  box-sizing: border-box;
+  transition: transform 0.2s ease;
 }
 
-/* Imagen redonda */
+.product-card:hover {
+  transform: translateY(-4px);
+}
+
+/* IMAGEN */
 .product-img {
-  background-color: #f8f8f8;
+  background-color: #f3f3f3;
   border-radius: 50%;
-  width: 140px;
-  height: 140px;
+  width: 120px;
+  height: 120px;
   display: flex;
   align-items: center;
   justify-content: center;
-  overflow: hidden;
   margin-bottom: 16px;
+  overflow: hidden;
 }
 
 .product-img img {
-  max-height: 120px;
+  max-height: 100px;
   width: auto;
-  display: block;
+  object-fit: contain;
 }
 
-/* Detalles del producto */
+/* DETALLES */
 .product-details {
   text-align: center;
   display: flex;
@@ -71,9 +69,9 @@
 
 .product-details h4 {
   font-family: 'Poppins', sans-serif;
-  font-size: 1.2rem;
-  font-weight: 600;
-  color: #0c1849;
+  font-size: 1.05rem;
+  font-weight: 700;
+  color: #0C1849;
   text-transform: uppercase;
 }
 
@@ -81,40 +79,47 @@
   font-family: 'Poppins', sans-serif;
   font-size: 0.95rem;
   font-weight: 400;
-  color: #0c1849;
+  color: #2f2f2f;
 }
 
-/* Botón de precio */
+/* BOTÓN */
 .product-card > button {
   width: 100%;
   font-family: 'Poppins', sans-serif;
   font-size: 1rem;
   font-weight: 600;
-  background-color: #e54225; /* Rojo Menoss */
+  background-color: #e54225;
   color: #ffffff;
   padding: 10px 0;
   border: none;
-  border-radius: 8px;
+  border-radius: 10px;
   cursor: pointer;
   transition: background-color 0.3s ease;
 }
 
 .product-card > button:hover {
-  background-color: #c7371b; /* Rojo más oscuro al hover */
+  background-color: #c7371b;
 }
 
-/* Responsive: móviles pequeños */
-@media (max-width: 600px) {
-  .product-content-section {
-    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-  }
-
+/* RESPONSIVE */
+@media (max-width: 768px) {
   .product-section {
-    padding: 20px 10px;
+    padding: 30px 20px;
+  }
+
+  .product-section > h2 {
+    font-size: 2rem;
+  }
+
+  .product-img {
+    width: 100px;
+    height: 100px;
+  }
+
+  .product-card > button {
+    font-size: 0.95rem;
   }
 }
-
-/* ✅ Forzar 5 columnas en pantallas grandes */
 @media (min-width: 1200px) {
   .product-content-section {
     grid-template-columns: repeat(5, 1fr);

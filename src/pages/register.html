@@ -9,7 +9,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Poppins:wght@400;600;700&display=swap" rel="stylesheet" />
 
   <!-- Estilos -->
-  <link rel="stylesheet" href="/src/styles/register.css" />
+  <link rel="stylesheet" href="/src/styles/auth.css" />
 </head>
 <body>
   <main>
@@ -26,7 +26,7 @@
             <img src="/public/assets/logo.png" alt="Logo Menoss" class="logo-img" />
           </div>
 
-          <form action="/register" method="POST">
+          <form id="register-form">
             <div class="form-group">
               <label for="name">Nombre</label>
               <input type="text" id="name" name="name" placeholder="Nombre completo" required />
@@ -51,11 +51,14 @@
           </form>
 
           <div class="links">
-            <a href="../login/index.html">¿Ya tienes cuenta? Inicia sesión</a>
+            <a href="/src/pages/login.html">¿Ya tienes cuenta? Inicia sesión</a>
           </div>
         </div>
       </div>
     </section>
   </main>
+
+  <!-- Script externo -->
+  <script src="/src/scripts/register.js"></script>
 </body>
 </html>
