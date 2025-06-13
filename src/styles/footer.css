@@ -1,23 +1,18 @@
-body {
-  margin: 0;
-  padding: 0;
-  font-family: 'Segoe UI', sans-serif;
-  background-color: #ffffff;
-}
-
-/* ----- FOOTER ----- */
 .footer {
-  background-color: #f7f7f7;
+  background-color: #f5f5f5; /* Gris claro neutro */
   padding: 60px 20px 80px 20px;
   font-size: 15px;
-  color: #001b44;
-  position: relative;
-  overflow: hidden;
+  color: #0c1c3c;
+  box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.03);
+  border-top: 1px solid #ddd;
 }
 
 .footer-container {
-  max-width: 1200px;
+  width: 100%;
+  max-width: 100%;
+  padding: 0 40px;
   margin: 0 auto;
+  box-sizing: border-box;
   display: flex;
   flex-wrap: wrap;
   gap: 60px;
@@ -32,7 +27,7 @@ body {
 .footer-title {
   font-size: 22px;
   font-weight: bold;
-  color: #001b44;
+  color: #0c1c3c;
   margin-bottom: 30px;
 }
 
@@ -40,6 +35,7 @@ body {
   font-size: 17px;
   font-weight: 700;
   margin-bottom: 20px;
+  color: #0c1c3c;
 }
 
 .contact-item {
@@ -49,10 +45,11 @@ body {
 }
 
 .icon-img {
-  width: 22px;
-  height: 22px;
+  width: 26px;
+  height: 26px;
   margin-right: 12px;
   margin-top: 4px;
+  filter: brightness(0) saturate(100%) invert(15%) sepia(60%) saturate(458%) hue-rotate(181deg) brightness(94%) contrast(92%);
 }
 
 .contact-text {
@@ -62,6 +59,7 @@ body {
 .contact-text strong {
   display: block;
   margin-bottom: 4px;
+  color: #0c1c3c;
 }
 
 .footer-column ul {
@@ -75,7 +73,7 @@ body {
 }
 
 .footer-column a {
-  color: #001b44;
+  color: #0c1c3c;
   text-decoration: none;
 }
 
@@ -84,19 +82,26 @@ body {
 }
 
 .highlight-link {
-  color: #c4334a;
+  color: #e94425;
   font-weight: bold;
   text-decoration: none;
 }
 
-/* ----- RESPONSIVE ----- */
+/* Responsive */
 @media (max-width: 768px) {
   .footer-container {
     flex-direction: column;
     gap: 40px;
+    padding: 0 20px;
   }
 
   .footer-column {
     width: 100%;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 20px;
+  }
+
+  .footer-column:last-child {
+    border-bottom: none;
   }
 }

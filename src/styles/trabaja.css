@@ -2,13 +2,24 @@
    ESTILOS PARA TRABAJA CON NOSOTROS
 ============================= */
 
+.container {
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 40px;
+}
+
 .trabaja-section {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  padding: 80px 0;
+  padding: 80px 20px;
   background-color: var(--color-fondo);
   gap: 40px;
+  box-sizing: border-box;
 }
 
 .trabaja-texto {

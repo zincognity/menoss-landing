@@ -5,7 +5,20 @@
   --accent-color: #c4334a;
   --max-width: 1200px;
 }
+main {
+  padding-top: 80px; /* Ajusta este valor según la altura real del navbar */
+}
 
+
+.nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 999; /* Para que quede por encima de todo */
+  background-color: #ffffff; /* O el fondo que uses */
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05); /* Opcional: sombrita elegante */
+}
 /* Estructura */
 header {
   position: sticky;
@@ -14,17 +27,20 @@ header {
   width: 100%;
   background-color: var(--primary-color);
   border-bottom: 1px solid #eee;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);;
 }
 
 /* Contenedor del nav */
 .nav {
+  width: 100%;
+  max-width: 100%;
+  margin: 0;
+  padding: 0 1rem;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  max-width: var(--max-width);
-  margin: auto;
-  padding: 0 1rem;
   height: 80px;
+  box-sizing: border-box;
 }
 
 .nav-logo img {
