@@ -12,27 +12,22 @@
     />
 
     <!-- Estilos globales -->
-    <link rel="stylesheet" href="../styles/main.css" />
-    <link rel="stylesheet" href="../styles/home.css" />
-    <link rel="stylesheet" href="../styles/navbar.css" />
-    <link rel="stylesheet" href="../styles/banner.css" />
-    <link rel="stylesheet" href="../styles/sections.css" />
-    <link rel="stylesheet" href="../styles/highlight.css" />
-    <link rel="stylesheet" href="../styles/footer.css" />
+    <link rel="stylesheet" href="/styles/main.css" />
+    <link rel="stylesheet" href="/styles/home.css" />
+    <link rel="stylesheet" href="/styles/navbar.css" />
+    <link rel="stylesheet" href="/styles/banner.css" />
+    <link rel="stylesheet" href="/styles/sections.css" />
+    <link rel="stylesheet" href="/styles/highlight.css" />
+    <link rel="stylesheet" href="/styles/footer.css" />
   </head>
   <body>
     <!-- Navbar -->
-    <div data-include="../components/navbar.html"></div>
-
+    <div data-include="/components/navbar.html"></div>
     <main>
       <!-- Banner principal -->
       <section class="home-banner">
         <div class="home-banner-content">
-          <img
-            src="/public/assets/logo.png"
-            alt="Menoss logo"
-            class="home-logo"
-          />
+          <img src="/assets/logo.png" alt="Menoss logo" class="home-logo" />
 
           <h2 class="home-subtitle">Bienvenido a</h2>
           <h1 class="home-title">TIENDA MENOSS</h1>
@@ -42,17 +37,15 @@
               src="https://img.icons8.com/ios-filled/24/000000/shopping-cart.png"
               alt="carrito"
             />
-            <span>Llevá más, pagá menos</span>
+            <span>Lleva más, paga menos</span>
           </div>
 
-          <a href="../pages/categorias.html" class="banner-button"
-            >Explorar productos</a
-          >
+          <a href="/categorias" class="banner-button">Explorar productos</a>
         </div>
       </section>
 
       <!-- SECTIONS: Supermercado y Hogar -->
-      <div data-include="../components/section.html"></div>
+      <div data-include="/components/section.html"></div>
 
       <!-- OFERTAS DESTACADAS -->
       <section class="highlight-section">
@@ -61,7 +54,7 @@
         <div class="product-grid">
           <article class="product-card">
             <div class="product-img">
-              <img src="/public/assets/nuggets.png" alt="Nuggets" />
+              <img src="/assets/nuggets.png" alt="Nuggets" />
             </div>
             <div class="product-details">
               <h4>Las Delicias de María</h4>
@@ -73,7 +66,7 @@
 
           <article class="product-card">
             <div class="product-img">
-              <img src="/public/assets/yogurt-gloria.png" alt="Yogurt" />
+              <img src="/assets/yogurt-gloria.png" alt="Yogurt" />
             </div>
             <div class="product-details">
               <h4>Maxichis</h4>
@@ -85,7 +78,7 @@
 
           <article class="product-card">
             <div class="product-img">
-              <img src="/public/assets/inkacola.png" alt="Inca Kola" />
+              <img src="/assets/inkacola.png" alt="Inca Kola" />
             </div>
             <div class="product-details">
               <h4>Delis</h4>
@@ -97,20 +90,20 @@
         </div>
 
         <div class="highlight-cta">
-          <a href="../pages/categorias.html" class="button-offer"
+          <a href="/pages/categorias.html" class="button-offer"
             >ENCUENTRA MENOS GASTOS AQUÍ</a
           >
         </div>
       </section>
 
       <!-- CATEGORÍAS -->
-      <div data-include="../pages/categorias.html"></div>
+      <div data-include="/pages/categorias.html"></div>
     </main>
 
     <!-- Footer -->
-    <div data-include="../components/footer.html"></div>
+    <div data-include="/components/footer.html"></div>
 
     <!-- Script include -->
-    <script src="../scripts/include.js"></script>
+    <script src="/scripts/include.js"></script>
   </body>
 </html>
