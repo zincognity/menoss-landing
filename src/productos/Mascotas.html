@@ -1,160 +1,179 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Limpieza - Menoss</title>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Limpieza - Menoss</title>
 
-  <!-- Estilos y fuentes -->
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="/src/styles/main.css" />
-  <link rel="stylesheet" href="/src/styles/navbar.css" />
-  <link rel="stylesheet" href="/src/styles/footer.css" />
-  <link rel="stylesheet" href="/src/styles/product.css" />
-</head>
-<body>
+    <!-- Estilos y fuentes -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/styles/main.css" />
+    <link rel="stylesheet" href="/styles/navbar.css" />
+    <link rel="stylesheet" href="/styles/footer.css" />
+    <link rel="stylesheet" href="/styles/product.css" />
+  </head>
+  <body>
+    <!-- Navbar -->
+    <div data-include="/components/navbar.html"></div>
 
-  <!-- Navbar -->
-  <div data-include="/src/components/navbar.html"></div>
+    <!-- Sección de productos -->
+    <main>
+      <section class="product-section">
+        <div class="product-wrapper">
+          <h2>Productos para Mascotas</h2>
+          <div class="product-content-section">
+            <article class="product-card">
+              <div class="product-img">
+                <img src="/public/assets/dog-chow.png" alt="Dog Chow Adulto" />
+              </div>
+              <div class="product-info">
+                <h4>Dog Chow</h4>
+                <span>Saco 2.2kg Adulto</span>
+                <span>Marca: Purina</span>
+              </div>
+              <button>S/. 28.90</button>
+            </article>
 
-  <!-- Sección de productos -->
-  <main>
-    <section class="product-section">
-      <div class="product-wrapper">
-        <h2>Productos para Mascotas</h2>
-        <div class="product-content-section">
+            <article class="product-card">
+              <div class="product-img">
+                <img src="/public/assets/cat-chow.png" alt="Cat Chow Adulto" />
+              </div>
+              <div class="product-info">
+                <h4>Cat Chow</h4>
+                <span>Bolsa 1.5kg Adulto</span>
+                <span>Marca: Purina</span>
+              </div>
+              <button>S/. 26.50</button>
+            </article>
 
-          <article class="product-card">
-            <div class="product-img">
-              <img src="/public/assets/dog-chow.png" alt="Dog Chow Adulto" />
-            </div>
-            <div class="product-info">
-              <h4>Dog Chow</h4>
-              <span>Saco 2.2kg Adulto</span>
-              <span>Marca: Purina</span>
-            </div>
-            <button>S/. 28.90</button>
-          </article>
+            <article class="product-card">
+              <div class="product-img">
+                <img
+                  src="/public/assets/canbo-cachorro.png"
+                  alt="Canbo Cachorro"
+                />
+              </div>
+              <div class="product-info">
+                <h4>Canbo Cachorro</h4>
+                <span>Bolsa 2kg</span>
+                <span>Marca: Canbo</span>
+              </div>
+              <button>S/. 22.90</button>
+            </article>
 
-          <article class="product-card">
-            <div class="product-img">
-              <img src="/public/assets/cat-chow.png" alt="Cat Chow Adulto" />
-            </div>
-            <div class="product-info">
-              <h4>Cat Chow</h4>
-              <span>Bolsa 1.5kg Adulto</span>
-              <span>Marca: Purina</span>
-            </div>
-            <button>S/. 26.50</button>
-          </article>
+            <article class="product-card">
+              <div class="product-img">
+                <img src="/public/assets/whiskas.png" alt="Whiskas Adulto" />
+              </div>
+              <div class="product-info">
+                <h4>Whiskas</h4>
+                <span>Sobres x12</span>
+                <span>Marca: Whiskas</span>
+              </div>
+              <button>S/. 17.80</button>
+            </article>
 
-          <article class="product-card">
-            <div class="product-img">
-              <img src="/public/assets/canbo-cachorro.png" alt="Canbo Cachorro" />
-            </div>
-            <div class="product-info">
-              <h4>Canbo Cachorro</h4>
-              <span>Bolsa 2kg</span>
-              <span>Marca: Canbo</span>
-            </div>
-            <button>S/. 22.90</button>
-          </article>
+            <article class="product-card">
+              <div class="product-img">
+                <img
+                  src="/public/assets/huesito-pedigree.png"
+                  alt="Galletas Pedigree"
+                />
+              </div>
+              <div class="product-info">
+                <h4>Galletas para perro</h4>
+                <span>Snack x3 huesitos</span>
+                <span>Marca: Pedigree</span>
+              </div>
+              <button>S/. 5.90</button>
+            </article>
 
-          <article class="product-card">
-            <div class="product-img">
-              <img src="/public/assets/whiskas.png" alt="Whiskas Adulto" />
-            </div>
-            <div class="product-info">
-              <h4>Whiskas</h4>
-              <span>Sobres x12</span>
-              <span>Marca: Whiskas</span>
-            </div>
-            <button>S/. 17.80</button>
-          </article>
+            <article class="product-card">
+              <div class="product-img">
+                <img
+                  src="/public/assets/arena-sanitaria.png"
+                  alt="Arena Sanitaria"
+                />
+              </div>
+              <div class="product-info">
+                <h4>Arena Sanitaria</h4>
+                <span>Bolsa 5kg</span>
+                <span>Marca: Petys</span>
+              </div>
+              <button>S/. 11.90</button>
+            </article>
 
-          <article class="product-card">
-            <div class="product-img">
-              <img src="/public/assets/huesito-pedigree.png" alt="Galletas Pedigree" />
-            </div>
-            <div class="product-info">
-              <h4>Galletas para perro</h4>
-              <span>Snack x3 huesitos</span>
-              <span>Marca: Pedigree</span>
-            </div>
-            <button>S/. 5.90</button>
-          </article>
+            <article class="product-card">
+              <div class="product-img">
+                <img
+                  src="/public/assets/shampoo-mascota.png"
+                  alt="Shampoo Mascotas"
+                />
+              </div>
+              <div class="product-info">
+                <h4>Shampoo Canino</h4>
+                <span>Botella 250ml</span>
+                <span>Marca: DogClean</span>
+              </div>
+              <button>S/. 7.80</button>
+            </article>
 
-          <article class="product-card">
-            <div class="product-img">
-              <img src="/public/assets/arena-sanitaria.png" alt="Arena Sanitaria" />
-            </div>
-            <div class="product-info">
-              <h4>Arena Sanitaria</h4>
-              <span>Bolsa 5kg</span>
-              <span>Marca: Petys</span>
-            </div>
-            <button>S/. 11.90</button>
-          </article>
+            <article class="product-card">
+              <div class="product-img">
+                <img
+                  src="/public/assets/comedero.png"
+                  alt="Comedero Plástico"
+                />
+              </div>
+              <div class="product-info">
+                <h4>Comedero Antideslizante</h4>
+                <span>Mediano</span>
+                <span>Marca: Genérico</span>
+              </div>
+              <button>S/. 6.90</button>
+            </article>
 
-          <article class="product-card">
-            <div class="product-img">
-              <img src="/public/assets/shampoo-mascota.png" alt="Shampoo Mascotas" />
-            </div>
-            <div class="product-info">
-              <h4>Shampoo Canino</h4>
-              <span>Botella 250ml</span>
-              <span>Marca: DogClean</span>
-            </div>
-            <button>S/. 7.80</button>
-          </article>
+            <article class="product-card">
+              <div class="product-img">
+                <img
+                  src="/public/assets/collar-mascota.png"
+                  alt="Collar para Mascota"
+                />
+              </div>
+              <div class="product-info">
+                <h4>Collar Ajustable</h4>
+                <span>Talla M</span>
+                <span>Marca: PetStyle</span>
+              </div>
+              <button>S/. 9.50</button>
+            </article>
 
-          <article class="product-card">
-            <div class="product-img">
-              <img src="/public/assets/comedero.png" alt="Comedero Plástico" />
-            </div>
-            <div class="product-info">
-              <h4>Comedero Antideslizante</h4>
-              <span>Mediano</span>
-              <span>Marca: Genérico</span>
-            </div>
-            <button>S/. 6.90</button>
-          </article>
-
-          <article class="product-card">
-            <div class="product-img">
-              <img src="/public/assets/collar-mascota.png" alt="Collar para Mascota" />
-            </div>
-            <div class="product-info">
-              <h4>Collar Ajustable</h4>
-              <span>Talla M</span>
-              <span>Marca: PetStyle</span>
-            </div>
-            <button>S/. 9.50</button>
-          </article>
-
-          <article class="product-card">
-            <div class="product-img">
-              <img src="/public/assets/hueso-juguete.png" alt="Juguete para perro" />
-            </div>
-            <div class="product-info">
-              <h4>Hueso de goma</h4>
-              <span>Con textura y sonido</span>
-              <span>Marca: Genérico</span>
-            </div>
-            <button>S/. 4.80</button>
-          </article>
-
+            <article class="product-card">
+              <div class="product-img">
+                <img
+                  src="/public/assets/hueso-juguete.png"
+                  alt="Juguete para perro"
+                />
+              </div>
+              <div class="product-info">
+                <h4>Hueso de goma</h4>
+                <span>Con textura y sonido</span>
+                <span>Marca: Genérico</span>
+              </div>
+              <button>S/. 4.80</button>
+            </article>
+          </div>
         </div>
-      </div>
-    </section>
-  </main>
+      </section>
+    </main>
 
+    <!-- Footer -->
+    <div data-include="/components/footer.html"></div>
 
-
-  <!-- Footer -->
-  <div data-include="/src/components/footer.html"></div>
-
-  <!-- Script de inclusión -->
-  <script src="/src/scripts/include.js"></script>
-</body>
+    <!-- Script de inclusión -->
+    <script src="/scripts/include.js"></script>
+  </body>
 </html>
