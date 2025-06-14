@@ -1,10 +1,10 @@
 :root {
-  --azul-marino: #01184F;
-  --rojo-vibrante: #E84225;
-  --crema-claro: #FDF4E5;
-  --amarillo-pastel: #F8D9A3;
-  --blanco: #FFFFFF;
-  --fuente: 'Poppins', sans-serif;
+  --azul-marino: #01184f;
+  --rojo-vibrante: #e84225;
+  --crema-claro: #fdf4e5;
+  --amarillo-pastel: #f8d9a3;
+  --blanco: #ffffff;
+  --fuente: "Poppins", sans-serif;
 }
 
 * {
@@ -16,7 +16,7 @@
 body {
   font-family: var(--fuente);
   background-color: var(--blanco);
-  background-image: url('/public/assets/icons/deco-bg.svg');
+  background-image: url("/assets/icons/deco-bg.svg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
