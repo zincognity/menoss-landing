@@ -11,4 +11,9 @@ export default defineConfig({
             input: sync("./src/**/*.html".replace(/\\/g, "/")),
         },
     },
+    preview: {
+        host: true,
+        port: 4173,
+        allowedHosts: ["menoss.incognity.dev"],
+    },
 });
