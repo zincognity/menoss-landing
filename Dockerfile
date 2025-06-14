@@ -1,13 +1,20 @@
-FROM nginx:alpine3.21-slim@sha256:b947b2630c97622793113555e13332eec85bdc7a0ac6ab697159af78942bb856 AS runtime
+FROM oven/bun:1.2.14-alpine@sha256:b5d37e653d1b86f23c15ecac4f3f9b4a5572045f16258637e033a2b16b317926 AS builder
 
-COPY nginx.conf /etc/nginx/nginx.conf
+WORKDIR /app
 
-COPY src/components/ /usr/share/nginx/html/components/
-COPY src/layouts/ /usr/share/nginx/html/layouts/
-COPY src/pages/ /usr/share/nginx/html/
-COPY src/productos/ /usr/share/nginx/html/productos/
-COPY src/scripts/ /usr/share/nginx/html/scripts/
-COPY src/styles/ /usr/share/nginx/html/styles/
-COPY public/assets/ /usr/share/nginx/html/public/assets/
+COPY package.json bun.lock ./
+RUN bun install --frozen-lockfile
 
-ENTRYPOINT [ "nginx", "-g", "daemon off;" ]
+COPY . .
+
+RUN bun run build
+
+FROM oven/bun:1.2.14-alpine@sha256:b5d37e653d1b86f23c15ecac4f3f9b4a5572045f16258637e033a2b16b317926 AS runtime
+
+WORKDIR /app
+
+COPY --from=builder /app/dist /app/dist
+
+EXPOSE 4173
+
+CMD ["bun", "run", "preview", "--", "--host", "0.0.0.0"]
