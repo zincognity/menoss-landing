@@ -7,7 +7,7 @@
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: flex-start;
-  padding: 60px 20px;
+  padding: 100px 20px;
   background-color: var(--color-fondo);
   gap: 40px;
   max-width: var(--max-width);
@@ -75,7 +75,7 @@
   max-width: 100%;
   border-radius: 12px;
   object-fit: cover;
-  box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
 }
 
 /* Responsive */
