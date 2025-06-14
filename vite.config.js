@@ -8,7 +8,10 @@ export default defineConfig({
         outDir: path.resolve(__dirname, "dist"),
         emptyOutDir: true,
         rollupOptions: {
-            input: sync("./src/**/*.html".replace(/\\/g, "/")),
+            input: [
+                ...sync("./src/**/*.html".replace(/\\/g, "/")),
+                ...sync("./src/**/*.js".replace(/\\/g, "/")),
+            ],
         },
     },
     preview: {
