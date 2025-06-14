@@ -13,8 +13,8 @@ FROM oven/bun:1.2.14-alpine@sha256:b5d37e653d1b86f23c15ecac4f3f9b4a5572045f16258
 
 WORKDIR /app
 
-COPY --from=builder /app/dist /app/dist
+COPY --from=builder /app /app
 
 EXPOSE 4173
 
-CMD ["bun", "run", "preview", "--", "--host", "0.0.0.0"]
+CMD ["bun", "preview", "--", "--host", "0.0.0.0"]
